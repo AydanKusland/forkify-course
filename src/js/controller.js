@@ -14,6 +14,11 @@ if (module.hot) {
 	module.hot.accept()
 }
 
+const GitNewFeatureTest = function () {
+	console.log('wahaha')
+}
+GitNewFeatureTest()
+
 const controlRecipes = async function () {
 	try {
 		const id = window.location.hash.slice(1)
