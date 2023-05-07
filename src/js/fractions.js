@@ -339,5 +339,3 @@ Fraction.primeFactors = function (n) {
 
 	return factors // Return the prime factors
 }
-
-export default Fraction
