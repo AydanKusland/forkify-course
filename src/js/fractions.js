@@ -340,4 +340,4 @@ Fraction.primeFactors = function (n) {
 	return factors // Return the prime factors
 }
 
-module.exports.Fraction = Fraction
+export default Fraction
