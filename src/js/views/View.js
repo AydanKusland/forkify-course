@@ -1,4 +1,5 @@
 import icons from 'url:../../img/icons.svg'
+import '../fractions'
 
 export default class View {
 	_data
