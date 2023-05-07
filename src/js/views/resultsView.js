@@ -1,6 +1,5 @@
 import View from './View'
 import previewView from './previewView'
-import icons from 'url:../../img/icons.svg'
 
 class ResultsView extends View {
 	_parentElement = document.querySelector('.results')
@@ -12,11 +11,3 @@ class ResultsView extends View {
 	}
 }
 export default new ResultsView()
-
-{
-	/* <div class="preview__user-generated">
-                    <svg>
-                      <use href="${icons}#icon-user"></use>
-                    </svg>
-                  </div> */
-}

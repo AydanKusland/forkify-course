@@ -14,11 +14,6 @@ if (module.hot) {
 	module.hot.accept()
 }
 
-const GitNewFeatureTest = function () {
-	console.log('wahaha')
-}
-GitNewFeatureTest()
-
 const controlRecipes = async function () {
 	try {
 		const id = window.location.hash.slice(1)
@@ -103,7 +98,7 @@ const controlAddRecipe = async function (newRecipe) {
 		// render recipe
 		recipeView.render(model.state.recipe)
 
-		// Succes message
+		// Success message
 		addRecipeView.renderMessage()
 
 		// Render bookmark view
@@ -125,7 +120,7 @@ const controlAddRecipe = async function (newRecipe) {
 function init() {
 	bookmarksView.addHandlerRender(controlBookmarks)
 	recipeView.addHandlerRender(controlRecipes)
-	recipeView.addHandlerUppdateServings(controlServings)
+	recipeView.addHandlerUpdateServings(controlServings)
 	searchView.addHandlerSearch(controlSearchResults)
 	paginationView.addHandlerClick(controlPagination)
 	recipeView.addHandlerAddBookmark(controlAddBookmark)
